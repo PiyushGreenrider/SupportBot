@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#chat-container {
+    width: 700px;
+    max-width: 100%;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 650px; /* Set a fixed height for the chat container */
+}
+#messages {
+    flex-grow: 1;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    height: calc(100% - 50px); /* Adjust height to account for input and button */
+}
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    word-wrap: break-word;
+    animation: fadeIn 0.5s; /* Optional: Add fade-in animation */
+}
+.user-message {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+    text-align: right;
+}
+.bot-message {
+    background-color: #288737;
+    color: rgb(251, 251, 251);
+    align-self: flex-start;
+    text-align: left;
+}
+#user-input {
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    outline: none;
+    width: 80%;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+#send-button {
+    padding: 10px;
+    border: none;
+    background-color: #32c749;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 20%;
+    box-sizing: border-box; /* Ensure padding is included in the element's width */
+}
+#send-button:hover {
+    background-color: #0056b3;
+}

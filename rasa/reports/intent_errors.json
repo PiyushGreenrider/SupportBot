@@ -1,0 +1,34 @@
+[
+  {
+    "text": "I need help with an issue",
+    "intent": "ask_troubleshoot",
+    "intent_prediction": {
+      "name": "report_issue",
+      "confidence": 0.871896505355835
+    }
+  },
+  {
+    "text": "I have a problem",
+    "intent": "ask_troubleshoot",
+    "intent_prediction": {
+      "name": "report_issue",
+      "confidence": 0.906868577003479
+    }
+  },
+  {
+    "text": "not really",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.33907604217529297
+    }
+  },
+  {
+    "text": "not interested",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.3796111047267914
+    }
+  }
+]

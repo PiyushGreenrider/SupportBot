@@ -1,0 +1,112 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - hello
+      - hi
+      - hey there
+      - good morning
+      - hey
+      - hi there
+      - greetings
+      - hello there
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
+      - bye bye
+      - see ya
+      - farewell
+      - catch you later
+      - take care
+  - intent: ask_troubleshoot
+    examples: |
+      - I need help with an issue
+      - Can you assist me?
+      - I have a problem
+      - Help me troubleshoot
+      - How can you help me?
+      - What can you do for me?
+      - Guide me through this issue
+      - Assist me with my problem
+  - intent: specify_issue
+    examples: |
+      - I am facing an issue
+      - I am having trouble with {issue_type}
+      - {issue_type}
+      - The problem is with {issue_type}
+      - Issue with {issue_type}
+      - Problem related to {issue_type}
+      - {issue_type} issue
+      - I can't {issue_type}
+  - intent: report_issue
+    examples: |
+      - I want to report an issue
+      - Reporting a problem
+      - Issue reporting needed
+      - File a complaint
+      - Register an issue
+      - Raise a concern
+      - Report an error
+      - Notify about an issue
+  - intent: mood_unhappy
+    examples: |
+      - I'm not happy
+      - I'm frustrated
+      - I'm upset
+      - Feeling disappointed
+      - I feel bad
+      - I'm angry
+      - I'm irritated
+      - I'm annoyed
+  - intent: deny
+    examples: |
+      - no
+      - I don't want to
+      - not really
+      - I disagree
+      - I refuse
+      - nah
+      - not interested
+      - I'll pass
+  - intent: mood_great
+    examples: |
+      - I'm feeling great
+      - I'm happy
+      - Feeling awesome
+      - I'm delighted
+      - I'm ecstatic
+      - I'm thrilled
+      - I'm overjoyed
+      - I'm in a good mood
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - Are you human?
+      - Am I talking to a human?
+      - Are you a real person?
+      - Are you AI?
+      - Prove you're not a bot
+      - Are you automated?
+      - Are you a robot?
+  - intent: affirm
+    examples: |
+      - yes
+      - sure
+      - indeed
+      - of course
+      - absolutely
+      - affirmative
+      - definitely
+      - yeah
+  - intent: issue_not_resolved
+    examples: |
+      - My issue is not resolved
+      - Problem persists
+      - Still facing the same issue
+      - Not fixed yet
+      - Not resolved
+      - Issue not solved
+      - Problem not rectified
+      - Still not working

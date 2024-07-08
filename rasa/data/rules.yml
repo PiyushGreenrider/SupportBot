@@ -1,0 +1,39 @@
+version: "3.0"
+rules:
+  - rule: Handle empty queue issue troubleshooting
+    steps:
+      - intent: ask_troubleshoot_empty_queue
+      - action: utter_ask_solution_empty_queue
+
+  - rule: Handle platform issue troubleshooting
+    steps:
+      - intent: ask_troubleshoot_platform_issue
+      - action: utter_ask_solution_platform_issue
+
+  - rule: Issue resolved - affirm
+    steps:
+      - intent: affirm
+      - action: utter_acknowledge_issue
+  - rule: Issue not resolved - report issue
+    steps:
+      - intent: deny
+      - action: utter_ask_report_issue
+
+  - rule: Report issue explicitly
+    steps:
+      - intent: report_issue
+      - action: utter_specify_issue
+  - rule: Greet and start conversation
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Other
+    steps:
+      - intent: other
+      - action: utter_other

@@ -1,0 +1,43 @@
+version: "3.0"
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - report_issue
+  - ask_troubleshoot_empty_queue
+  - ask_troubleshoot_platform_issue
+  - inform_troubleshoot_empty_queue
+  - inform_troubleshoot_platform_issue
+  - other
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+    - text: "Hello, How can I help you today"
+    - text: "Hey, I am a support bot. How can I help you?"
+    - text: "Hello! What can I do for you?"
+  utter_goodbye:
+    - text: "Goodbye! If you have any other questions, feel free to ask."
+    - text: "Goodbye! Is there anything I can do for you."
+  utter_ask_solution_empty_queue:
+    - text: "To troubleshoot empty queue issue,\n try clearing your browser cache and then reloading the page.\n Let me know if that helps."
+    - text: "To troubleshoot empty queue issue,\n I would suggest you to clear the browser cache and then login again on the platform.\n Let me know if that helps."
+  utter_ask_solution_platform_issue:
+    - text: "For platform issues,\n try reloading the page and then attempting to log in again.\n Let me know if that resolves the problem."
+    - text: "For platform issues,\n try reloading the page.\n Let me know if that resolves the problem."
+    - text: "For platform issues,\n try reloading the page and then attempting to log in again.\n Try this and then tell me if it worked."
+  utter_ask_report_issue:
+    - text: "I'm sorry to hear that. Would you like me to raise a ticket for this issue?"
+    - text: " If the troubleshooting steps are not working, it is better to raise a ticket for this issue. I can do it for you"
+  utter_acknowledge_issue:
+    - text: "Thank you for reporting the issue. I'll escalate this to our support team."
+    - text: "Thank you, Your issue has been reported succesfully."
+  utter_specify_issue:
+    - text: "Can you tell me what is the issue that you are facing"
+    - text: "Can you be more specific about the issue you are facing"
+    - text: "What issue are you facing, Empty queue or Platform issue?"
+
+  utter_other:
+    - text: "I don't think I can help you with that"
+    - text: "There is nothing I can do about it"
+    - text: "I can not help you with that"

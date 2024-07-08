@@ -1,0 +1,123 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi there
+    - hey
+    - hello bot
+    - Hello there
+    - Wassup
+    - How you doin
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - bye bot
+    - bye bye
+    - Thank you
+    - thanks
+    - great bye
+    - see you
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - sure
+    - yes, it 
+    - Why not
+    - Yes please
+    - That would be great
+    - Sure , do it
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - not yet
+    - nope
+    - No it did not
+    - no still the same
+    - no it did not work
+    - It is still not solved
+
+
+- intent: report_issue
+  examples: |
+    - I'm facing an issue
+    - the problem persists
+    - it's still not working
+    - the issue hasn't been resolved
+    - I need your help
+    - Help me
+    - I am facing a problem
+    - There is a problem
+    - please can you help me
+    - There is something I want
+    - I am having soem trouble
+
+
+- intent: ask_troubleshoot_empty_queue
+  examples: |
+    - I'm having an empty queue issue
+    - how to troubleshoot empty queue
+    - what should I do if the queue is empty
+    - help with empty queue problem
+    - queue is empty, what now
+    - my dashboard shows empty queue
+    - I cannot start tasking, it says your queue is empty
+    - why is my queue empty
+    - I am having empty queue
+
+- intent: ask_troubleshoot_platform_issue
+  examples: |
+    - platform issue troubleshooting
+    - how to fix platform issues
+    - can't log in, what to do
+    - help with platform login issue
+    - platform login problem
+    - I cannot login
+    - facing platform error
+    - the platform is not loading
+    - I cannot access my platform
+
+- intent: inform_troubleshoot_empty_queue
+  examples: |
+    - clear browser cache
+    - reload the page
+    - tried clearing cache and reloading
+    - cache cleared, still no change
+    - no effect after cache clear
+    - tried reloading the page
+    - I did reload
+    - Refreshing page does nothing
+    - still the same 
+    - Is there anything else that I can do
+    - Nope, did noth
+
+- intent: inform_troubleshoot_platform_issue
+  examples: |
+    - reload page
+    - try logging in again
+    - attempted to login again
+    - page reloaded, login still not working
+    - no success after reload and 
+    - It didn't work
+    - Is there anything else that I can do
+    - Nope, did nothing
+
+
+- intent: other
+  examples: |
+    - Can you speak
+    - politics
+    - What do you know about me
+    - What is life
+    - life
+    - love
+    - hate
+    - abuse

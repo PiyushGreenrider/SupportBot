@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  rasa:
+    image: rasa/rasa:latest-full
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./rasa:/app
+    command: run
+    networks:
+      - mynetwork
+  action_server:
+    image: rasa/rasa-sdk:latest
+    ports:
+      - "5055:5055"
+    volumes:
+      - ./rasa/actions:/app/actions
+    networks:
+      - mynetwork
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - mynetwork
+    depends_on:
+      - rasa
+  frontend:
+    image: nginx:alpine
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    ports:
+      - "5500:80"
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+    driver: bridge

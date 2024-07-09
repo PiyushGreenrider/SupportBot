@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         userInput.value = "";
         // Send the message to the backend
         fetch("http://127.0.0.1:8000/webhook", {
-            method: "POST",
+            method: "*",
             headers: {
                 "Content-Type": "application/json"
             },

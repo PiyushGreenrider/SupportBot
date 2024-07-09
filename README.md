@@ -1,5 +1,5 @@
-For running the chatbot. Follow these instructions:\n
-a. Install a virtual environment using the commands \n 
+For running the chatbot. Follow these instructions
+a. Install a virtual environment using the commands 
 ``` virtualenv venv```
 b. Run the virtual environment: ``` ./venv/Scripts/activate ```
 c. Install the dependencies: 

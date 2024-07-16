@@ -14,15 +14,19 @@ rules:
     steps:
       - intent: affirm
       - action: utter_acknowledge_issue
+
+
   - rule: Issue not resolved - report issue
     steps:
       - intent: deny
       - action: utter_ask_report_issue
 
+
   - rule: Report issue explicitly
     steps:
       - intent: report_issue
       - action: utter_specify_issue
+
   - rule: Greet and start conversation
     steps:
       - intent: greet

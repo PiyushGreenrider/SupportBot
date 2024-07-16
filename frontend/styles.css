@@ -17,7 +17,7 @@ body {
     padding: 10px;
     border-bottom: 1px solid #ccc;
     overflow-y: auto;
-    height: calc(100% - 50px); /* Adjust height to account for input and button */
+    height: calc(100% - 100px); /* Adjust height to account for input, button and optional buttons */
 }
 .message {
     margin-bottom: 10px;
@@ -34,7 +34,7 @@ body {
 }
 .bot-message {
     background-color: #288737;
-    color: rgb(251, 251, 251);
+    color: #fff;
     align-self: flex-start;
     text-align: left;
 }
@@ -50,11 +50,27 @@ body {
     padding: 10px;
     border: none;
     background-color: #32c749;
-    color: rgb(0, 0, 0);
+    color: #000;
     cursor: pointer;
     width: 20%;
     box-sizing: border-box; /* Ensure padding is included in the element's width */
 }
 #send-button:hover {
     background-color: #0056b3;
+}
+.buttons-container {
+    margin: 10px 0;
+    text-align: center;
+}
+.buttons-container button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #288737;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.buttons-container button:hover {
+    background-color: #1e6c2b;
 }

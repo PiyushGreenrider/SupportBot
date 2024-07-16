@@ -10,6 +10,7 @@ intents:
   - inform_troubleshoot_empty_queue
   - inform_troubleshoot_platform_issue
   - other
+
 responses:
   utter_greet:
     - text: "Hello! How can I assist you today?"
@@ -28,16 +29,23 @@ responses:
     - text: "For platform issues,\n try reloading the page and then attempting to log in again.\n Try this and then tell me if it worked."
   utter_ask_report_issue:
     - text: "I'm sorry to hear that. Would you like me to raise a ticket for this issue?"
-    - text: " If the troubleshooting steps are not working, it is better to raise a ticket for this issue. I can do it for you"
+
   utter_acknowledge_issue:
     - text: "Thank you for reporting the issue. I'll escalate this to our support team."
     - text: "Thank you, Your issue has been reported succesfully."
+
   utter_specify_issue:
-    - text: "Can you tell me what is the issue that you are facing"
-    - text: "Can you be more specific about the issue you are facing"
-    - text: "What issue are you facing, Empty queue or Platform issue?"
+    - text: "Can you tell me what is the issue that you are facing:"
+      buttons:
+        - title: "Empty Queue Issue"
+          payload: "/ask_troubleshoot_empty_queue"
+        - title: "Platform Issue"
+          payload: "/ask_troubleshoot_platform_issue"
+    
 
   utter_other:
     - text: "I don't think I can help you with that"
     - text: "There is nothing I can do about it"
     - text: "I can not help you with that"
+
+

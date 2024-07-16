@@ -1,112 +1,127 @@
-version: "3.1"
+version: "3.0"
 nlu:
-  - intent: greet
-    examples: |
-      - hello
-      - hi
-      - hey there
-      - good morning
-      - hey
-      - hi there
-      - greetings
-      - hello there
-  - intent: goodbye
-    examples: |
-      - bye
-      - goodbye
-      - see you later
-      - bye bye
-      - see ya
-      - farewell
-      - catch you later
-      - take care
-  - intent: ask_troubleshoot
-    examples: |
-      - I need help with an issue
-      - Can you assist me?
-      - I have a problem
-      - Help me troubleshoot
-      - How can you help me?
-      - What can you do for me?
-      - Guide me through this issue
-      - Assist me with my problem
-  - intent: specify_issue
-    examples: |
-      - I am facing an issue
-      - I am having trouble with {issue_type}
-      - {issue_type}
-      - The problem is with {issue_type}
-      - Issue with {issue_type}
-      - Problem related to {issue_type}
-      - {issue_type} issue
-      - I can't {issue_type}
-  - intent: report_issue
-    examples: |
-      - I want to report an issue
-      - Reporting a problem
-      - Issue reporting needed
-      - File a complaint
-      - Register an issue
-      - Raise a concern
-      - Report an error
-      - Notify about an issue
-  - intent: mood_unhappy
-    examples: |
-      - I'm not happy
-      - I'm frustrated
-      - I'm upset
-      - Feeling disappointed
-      - I feel bad
-      - I'm angry
-      - I'm irritated
-      - I'm annoyed
-  - intent: deny
-    examples: |
-      - no
-      - I don't want to
-      - not really
-      - I disagree
-      - I refuse
-      - nah
-      - not interested
-      - I'll pass
-  - intent: mood_great
-    examples: |
-      - I'm feeling great
-      - I'm happy
-      - Feeling awesome
-      - I'm delighted
-      - I'm ecstatic
-      - I'm thrilled
-      - I'm overjoyed
-      - I'm in a good mood
-  - intent: bot_challenge
-    examples: |
-      - Are you a bot?
-      - Are you human?
-      - Am I talking to a human?
-      - Are you a real person?
-      - Are you AI?
-      - Prove you're not a bot
-      - Are you automated?
-      - Are you a robot?
-  - intent: affirm
-    examples: |
-      - yes
-      - sure
-      - indeed
-      - of course
-      - absolutely
-      - affirmative
-      - definitely
-      - yeah
-  - intent: issue_not_resolved
-    examples: |
-      - My issue is not resolved
-      - Problem persists
-      - Still facing the same issue
-      - Not fixed yet
-      - Not resolved
-      - Issue not solved
-      - Problem not rectified
-      - Still not working
+- intent: greet
+  examples: |
+    - hello
+    - hi there
+    - hey
+    - hello bot
+    - Hello there
+    - Wassup
+    - How you doin
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - bye bot
+    - bye bye
+    - Thank you
+    - thanks
+    - great bye
+    - see you
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - sure
+    - yes, it 
+    - Why not
+    - Yes please
+    - That would be great
+    - Sure , do it
+
+- intent: deny
+  examples: |
+    - no
+    - not really
+    - not yet
+    - nope
+    - No it did not
+    - no still the same
+    - no it did not work
+    - It is still not solved
+    - No it did not help
+    - Nothing helpful
+    - Still the same
+
+
+- intent: report_issue
+  examples: |
+    - I'm facing an issue
+    - the problem persists
+    - it's still not working
+    - the issue hasn't been resolved
+    - I need your help
+    - Help me
+    - I am facing a problem
+    - There is a problem
+    - please can you help me
+    - There is something I want
+    - I am having soem trouble
+
+
+- intent: ask_troubleshoot_empty_queue
+  examples: |
+    - I'm having an empty queue issue
+    - how to troubleshoot empty queue
+    - what should I do if the queue is empty
+    - help with empty queue problem
+    - queue is empty, what now
+    - my dashboard shows empty queue
+    - I cannot start tasking, it says your queue is empty
+    - why is my queue empty
+    - I am having empty queue
+
+- intent: ask_troubleshoot_platform_issue
+  examples: |
+    - platform issue troubleshooting
+    - how to fix platform issues
+    - can't log in, what to do
+    - help with platform login issue
+    - platform login problem
+    - I cannot login
+    - facing platform error
+    - the platform is not loading
+    - I cannot access my platform
+
+- intent: inform_troubleshoot_empty_queue
+  examples: |
+    - clear browser cache
+    - reload the page
+    - tried clearing cache and reloading
+    - cache cleared, still no change
+    - no effect after cache clear
+    - tried reloading the page
+    - I did reload
+    - Refreshing page does nothing
+    - still the same 
+    - Is there anything else that I can do
+    - Nope, did nothing
+
+- intent: inform_troubleshoot_platform_issue
+  examples: |
+    - reload page
+    - try logging in again
+    - attempted to login again
+    - page reloaded, login still not working
+    - no success after reload and 
+    - It didn't work
+    - Is there anything else that I can do
+    - Nope, did nothing
+
+
+- intent: other
+  examples: |
+    - Can you speak
+    - politics
+    - What do you know about me
+    - What is life
+    - life
+    - love
+    - hate
+    - abuse
+    - Irrelevant

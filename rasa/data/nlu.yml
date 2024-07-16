@@ -44,6 +44,9 @@ nlu:
     - no still the same
     - no it did not work
     - It is still not solved
+    - No it did not help
+    - Nothing helpful
+    - Still the same
 
 
 - intent: report_issue
@@ -97,7 +100,7 @@ nlu:
     - Refreshing page does nothing
     - still the same 
     - Is there anything else that I can do
-    - Nope, did noth
+    - Nope, did nothing
 
 - intent: inform_troubleshoot_platform_issue
   examples: |
@@ -121,3 +124,4 @@ nlu:
     - love
     - hate
     - abuse
+    - Irrelevant

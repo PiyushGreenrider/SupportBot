@@ -21,6 +21,10 @@ rules:
       - intent: deny
       - action: utter_ask_report_issue
 
+  - rule: No ticket needed - anything_else
+    steps:
+      - intent: deny_ticket
+      - action: anything_else
 
   - rule: Report issue explicitly
     steps:

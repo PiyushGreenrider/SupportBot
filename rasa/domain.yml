@@ -4,11 +4,13 @@ intents:
   - goodbye
   - affirm
   - deny
+  - deny_ticket
   - report_issue
   - ask_troubleshoot_empty_queue
   - ask_troubleshoot_platform_issue
   - inform_troubleshoot_empty_queue
   - inform_troubleshoot_platform_issue
+  - anything_else
   - other
 
 responses:
@@ -42,7 +44,10 @@ responses:
         - title: "Platform Issue"
           payload: "/ask_troubleshoot_platform_issue"
     
-
+  utter_anything_else:
+    - text: "Understood, is there anything else you need?"
+    - text: "Okay, Do you need anything else?"
+    
   utter_other:
     - text: "I don't think I can help you with that"
     - text: "There is nothing I can do about it"

@@ -48,6 +48,16 @@ nlu:
     - Nothing helpful
     - Still the same
 
+- intent: deny_ticket
+  examples: |
+    - no thanks
+    - no need
+    - let's not
+    - I don't think so
+    - That would not be necessary
+    - no I will try something else
+    - Don't
+    - won't be needed
 
 - intent: report_issue
   examples: |
